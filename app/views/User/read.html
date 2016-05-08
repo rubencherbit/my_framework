@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Framework</title>
+</head>
+<body>
+	id : {{ result.id }} <br />
+	firstname : {{ result.firstname }} <br />
+	lastname : {{ result.lastname }} <br />
+	login : {{ result.login }} <br />
+	email : {{ result.email }} <br />
+	<a href="/{{ url }}/user/update/id/{{ result.id }}" title="Update">Update</a>
+	<a href="/{{ url }}/user/delete/id/{{ result.id }}" title="delete">Delete</a>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create user</title>
+</head>
+<body>
+	<form method="post" action="/{{ url }}/user/create/">
+		<ul>
+		<li><label for="firstname">Firstname : </label><input type="text" placeholder="Firstname" name="firstname" id="firstname"></input></li>
+		<li><label for="lastname">Lastname : </label><input type="text" placeholder="Lastname" name="lastname" id="lastname"></input></li>
+		<li><label for="login">Login : </label><input type="text" placeholder="Login" name="login" id="login"></input></li>
+		<li><label for="email">Email : </label><input type="text" placeholder="Email" name="email" id="email"></input></li>
+		<li><input type="submit" value="Créer"></input></li>
+		<ul>
+	</form>
+</body>
+</html>

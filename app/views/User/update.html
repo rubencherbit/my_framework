@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ result.login }}</title>
+</head>
+<body>
+	<form method="post" action="/{{ url }}/user/update/id/{{ result.id }}">
+		<ul>
+		<li><label for="firstname">Firstname : </label><input type="text" placeholder="Firstname" name="firstname" value="{{ result.firstname }}" id="firstname"></input></li>
+		<li><label for="lastname">Lastname : </label><input type="text" placeholder="Lastname" name="lastname" value="{{ result.lastname }}" id="lastname"></input></li>
+		<li><label for="login">Login : </label><input type="text" placeholder="Login" name="login" value="{{ result.login }}" id="login"></input></li>
+		<li><label for="email">Email : </label><input type="text" placeholder="Email" name="email" value="{{ result.email }}" id="email"></input></li>
+		<li><input type="submit" value="Modifier"></input></li>
+		<ul>
+	</form>
+</body>
+</html>

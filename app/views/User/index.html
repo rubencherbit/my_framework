@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>All users</title>
+</head>
+<body>
+<header>
+	<a href="/{{ url }}/user/create">Create</a>
+</header>
+	<div class="user">
+		<table>
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Firstname</th>
+					<th>Lastname</th>
+					<th>Login</th>
+					<th>email</th>
+				</tr>
+			</thead>
+			<tbody>
+			{% for user in users %}
+				<tr>
+					<td>{{ user.id }}</td>
+					<td>{{ user.firstname }}</td>
+					<td>{{ user.lastname }}</td>
+					<td>{{ user.login }}</td>
+					<td>{{ user.email }}</td>
+					<td><a href="/{{ url }}/user/read/id/{{ user.id }}" title="Read">Read</a></td>
+					<td><a href="/{{ url }}/user/update/id/{{ user.id }}" title="Update">Update</a></td>
+					<td><a href="/{{ url }}/user/delete/id/{{ user.id }}" title="delete">Delete</a></td>
+				</tr>
+				{% endfor %}
+
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
