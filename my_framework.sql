@@ -41,10 +41,10 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `firstname`, `lastname`, `login`, `email`) VALUES
-(1, 'ruben', 'cherbit', 'cherbi_r', 'ruben.cherbit@epitech.eu'),
-(3, 'coucou', 'coucouc', 'coucouc', 'coucouc'),
-(16, 'Rodolphe', 'Laidet', 'laidet_r', 'laidet_r@epitech.eu'),
-(17, 'Allan', 'Guichard', 'guicha_a', 'guicha_a@epitech.eu');
+(1, 'ruben', 'cherbit', 'cherbi_r', 'coucouc'),
+(3, 'coucou', 'coucouc', 'coucouc', 'coucouc1'),
+(16, 'Rodolphe', 'Laidet', 'laidet_r', 'coucouc2'),
+(17, 'Allan', 'Guichard', 'guicha_a', 'coucouc3');
 
 --
 -- Index pour les tables exportées
